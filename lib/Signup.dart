@@ -1,3 +1,4 @@
+import 'package:animated_background/animated_background.dart';
 import 'package:flutter/material.dart';
 
 import 'Signin.dart';
@@ -9,23 +10,21 @@ class Signup extends StatefulWidget {
   State<Signup> createState() => _SignupState();
 }
 
-class _SignupState extends State<Signup> {
+class _SignupState extends State<Signup>with TickerProviderStateMixin {
   bool _obscure = true;
   bool _obscure2 = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff14213d),
-      body: SingleChildScrollView(
+     backgroundColor: Color(0xff3a89b9),
+        body: AnimatedBackground(
+      behaviour: RandomParticleBehaviour(),
+      vsync: this,
+      child: SingleChildScrollView(
         child: Stack(
           alignment: AlignmentDirectional.center,
           children: [
-            /*Image.asset(
-              "assets/Images/l/logback.png",
-              width: MediaQuery.of(context).size.width * 1,
-              fit: BoxFit.fill,
-            ),*/
             Container(
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
@@ -184,6 +183,7 @@ class _SignupState extends State<Signup> {
           ],
         ),
       ),
+        ) 
     );
   }
 }

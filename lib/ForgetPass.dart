@@ -160,10 +160,7 @@ class _ForgetPassState extends State<ForgetPass> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(builder: (context) => Signup()),
-                      );
+                   
 
                     },
                   ),
