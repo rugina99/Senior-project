@@ -49,7 +49,7 @@ class _ExploreState extends State<Explore> {
                              width: MediaQuery.of(context).size.width,
                              margin: EdgeInsets.symmetric(horizontal: 5.0),
                              decoration: BoxDecoration(
-                                 color: Colors.amber
+                                 color: Colors.pink
                              ),
                              child: Text('text $i', style: TextStyle(fontSize: 16.0),)
                          );
