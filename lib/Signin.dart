@@ -190,6 +190,7 @@ class _SigninState extends State<Signin> with TickerProviderStateMixin {
           )
         ],
       )),
-    ));
+    )
+    );
   }
 }
